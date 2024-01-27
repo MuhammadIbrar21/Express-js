@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  display: block;
+}
+
+body {
+  background: #f9f9f9;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Urbanist", sans-serif;
+  gap: 4em;
+  flex-wrap: wrap;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 3rem clamp(1rem, 5%, 3rem);
+}
+
+.card {
+  padding: 3.5em 2em 2em;
+  width: 300px;
+  background: #fff;
+  box-shadow: 5px 7px 17px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.card .rectangle {
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  transform: translatex(-50%);
+  width: 50px;
+  background: #e8e8e8;
+  height: 10px;
+  display: block;
+  border-radius: 50px;
+}
+.card-content {
+  padding-top: 7.2em;
+}
+.card-content h2 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 0.2em;
+  margin-bottom: 0.35em;
+  font-weight: 700;
+}
+.card-content p {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+}
+.card-img {
+  position: relative;
+}
+.card-img-overlay {
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+.card-img-overlay p {
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  display: grid;
+  place-items: center;
+  padding: 0.9em;
+  text-align: center;
+  position: relative;
+  top: 100%;
+  min-width: 85px;
+  min-height: 85px;
+  word-wrap: break-word;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.card:nth-child(1) .card-img-overlay {
+  background: #056f6a;
+  /* The Fallback */
+  background: rgba(5, 111, 106, 0.5);
+}
+.card:nth-child(1) .card-img-overlay p {
+  background: #056f6a;
+  /* The Fallback */
+  background: #056f6a;
+}
+.card:nth-child(2) .card-img-overlay {
+  background: #b37399;
+  /* The Fallback */
+  background: rgba(179, 115, 153, 0.5);
+}
+.card:nth-child(2) .card-img-overlay p {
+  background: #b37399;
+  /* The Fallback */
+  background: #b37399;
+}
